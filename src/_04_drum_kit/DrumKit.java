@@ -70,10 +70,10 @@ public class DrumKit implements MouseListener {
 			panel.add(drumLabelWithImage2);
 			frame.pack();
 	}
-	/*
+
 	public void mouseClicked(MouseEvent e) {
 		// 14. Print "mouse clicked" to the console. Run your program and watch
-		print("mouse clicked");
+		System.out.println("Mouse clicked");
 		// the console to see when this is printed.
 
 		JLabel drumClicked = (JLabel) e.getSource(); // This line gets the label
@@ -85,13 +85,14 @@ public class DrumKit implements MouseListener {
 		// leagueofamazing/code4life.
 		String drumSound = "drum.mp3";
 		// 16. If they clicked on the drumImage...
-		
+		if(drumClicked==drumLabelWithImage) {
+			playSound(drumSound);
+		}
 		
 		// 17. ...use the playSound method to play a drum sound. Test to see if
 		// it works
 
 	}
-	*/
 
 	private void print(String string) {
 		// TODO Auto-generated method stub
@@ -136,11 +137,6 @@ public class DrumKit implements MouseListener {
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
 
-	}
-	@Override
-	public void mouseClicked(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		print("Mouse clicked");
 	}
 
 }
